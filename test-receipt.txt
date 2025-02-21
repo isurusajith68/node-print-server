@@ -1,0 +1,17 @@
+
+    MY SHOP (TEST RECEIPT)
+    ----------------------
+    Date: 2/16/2025   Time: 10:37:34 PM
+    ----------------------
+    BBQ burgers x1 580
+    orange juice  x1 520
+    icing cake x1 1500
+    chocolate cake x1 1000
+    ----------------------
+    Subtotal: 3600
+    Discount: 0
+    Cash: 5000
+    Change: 1400
+    ----------------------
+    THANK YOU! COME AGAIN
+    
