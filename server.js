@@ -114,7 +114,7 @@ app.post("/print", (req, res) => {
       cart.forEach((item) => {
         printer.tableCustom([
           { text: item.name.substring(0, 15), align: "LEFT", width: 0.4 },
-          { text: `${item.quantity}`, align: "LEFT", width: 0.12 },
+          { text: `${item.quantity} *`, align: "LEFT", width: 0.12 },
           {
             text: `${Number(item.price).toFixed(2)}`,
             align: "RIGHT",
@@ -136,9 +136,8 @@ app.post("/print", (req, res) => {
             `Rs ${Number(subTotal).toFixed(2)}`.padStart(26)
         )
         .text(`SC             `.padEnd(20) + `Rs 0.00`.padStart(26))
-        .text(`DISCOUNT       `.padEnd(20) + `${discount} %`.padStart(26))
         .text(
-          `DISCOUNT AMOUNT     `.padEnd(20) +
+          `DISCOUNT       `.padEnd(20) +
             `Rs ${discountAmount.toFixed(2)}`.padStart(26)
         )
         .text(
