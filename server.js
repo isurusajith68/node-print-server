@@ -103,7 +103,7 @@ app.post("/print", (req, res) => {
         .text(`Customer: ${customer}`)
         .text("----------------------------------------------");
       printer.tableCustom([
-        { text: "DESCRIPTION", align: "LEFT", width: 0.4 },
+        { text: "ITEM", align: "LEFT", width: 0.4 },
         { text: "QTY", align: "LEFT", width: 0.12 },
         { text: "PRICE", align: "RIGHT", width: 0.2 },
         { text: "AMOUNT", align: "RIGHT", width: 0.25 },
